@@ -26,7 +26,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.yalantis.ucrop.view.UCropView;
+//import com.yalantis.ucrop.view.UCropView;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -60,11 +60,11 @@ public class ResultActivity extends BaseActivity {
         Uri uri = getIntent().getData();
         if (uri != null) {
             try {
-                UCropView uCropView = findViewById(R.id.ucrop);
-                uCropView.getCropImageView().setImageUri(uri, null);
-                uCropView.getOverlayView().setShowCropFrame(false);
-                uCropView.getOverlayView().setShowCropGrid(false);
-                uCropView.getOverlayView().setDimmedColor(Color.TRANSPARENT);
+//                UCropView uCropView = findViewById(R.id.ucrop);
+//                uCropView.getCropImageView().setImageUri(uri, null);
+//                uCropView.getOverlayView().setShowCropFrame(false);
+//                uCropView.getOverlayView().setShowCropGrid(false);
+//                uCropView.getOverlayView().setDimmedColor(Color.TRANSPARENT);
             } catch (Exception e) {
                 Log.e(TAG, "setImageUri", e);
                 Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
