@@ -1,1 +1,1 @@
-include ':ucrop', ':sample', ':cropimage'
+include ':sample', ':cropimage'
